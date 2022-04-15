@@ -1,0 +1,13 @@
+.steps {
+    height: 100%;
+    margin-bottom: 6rem;
+    margin-top: 1rem;
+}
+
+.steps-text {
+    height: 100%;
+}
+
+.steps:last-child {
+    margin-bottom: 8rem;
+}

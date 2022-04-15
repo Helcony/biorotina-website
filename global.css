@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+:root {
+    --font-family: 'Kumbh Sans', sans-serif;
+    --body-color: #52bd82;
+    --section-height: 95vh;
+    --h1-font-weight: 900;
+    --h2-font-weight: 700;
+    --h3-font-weight: 700;
+    --p-font-weight: bolder;
+    --h1-font-size: 6rem;
+    --h2-font-size: 4rem;
+    --h3-font-size: 2.5rem;
+    --p-font-size: 1.5rem;
+    --heading-color: #05386B;
+    --text-color: #EDF5E1;
+    --footer-text-color: #EDF5E1;
+    --icon-color: #EDF5E1;
+    --img-width: 30rem;
+    --icon-width: 4rem;
+    --logo-width: 5rem;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: var(--font-family);
+
+}
+
+body {
+    overflow-x: hidden;
+    background-color: var(--body-color);
+}
+
+.scroll {
+    overflow-y: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color:rgba(44, 173, 55, 0.014);
+}
+  
+::-webkit-scrollbar-thumb {
+    background: #05386B;
+    border-radius: 5rem;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #EDF5E1;
+}
+
+.nav-toggle {
+    visibility: hidden;
+    display: none;
+}
+
+.navbar {
+    padding: 1.5rem 0 0 0;
+    margin-bottom: -8rem;
+}
+
+.nav-link {
+    color: var(--heading-color);
+    font-size: 1.25rem;
+    margin-left: 2rem;
+    font-weight: 700;
+}
+
+.nav-link:hover {
+    color: var(--text-color);
+}
+
+.heading-p {
+    font-size: 1.8rem;
+}
+
+.current {
+    color: var(--text-color);
+}
+
+.current:hover {
+    color: var(--heading-color);
+}
+
+section {
+    min-height: var(--section-height);
+    margin-top: 5rem;
+}
+
+h1 {
+    font-size: var(--h1-font-size);
+    font-weight: var(--h1-font-weight);
+    color: var(--heading-color);
+}
+
+h2 {
+    font-size: var(--h2-font-size);
+    font-weight: var(--h2-font-weight);
+    color: var(--heading-color);
+}
+
+h3 {
+    font-size: var(--h3-font-size);
+    font-weight: var(--h3-font-weight);
+    color: var(--heading-color);
+}
+
+p {
+    font-size: var(--p-font-size);
+    font-weight: var(--p-font-weight);
+    color: var(--text-color);
+}
+
+img {
+    width: var(--img-width);
+}
+
+.img-main {
+    width: 33rem;
+}
+
+.icons {
+    width: var(--icon-width);
+    color: var(--icon-color);
+    margin-right: 3rem;
+}
+
+.menu {
+    margin-right: 0;
+    width: 3rem;
+    cursor: pointer;
+}
+
+.x {
+    width: 2.8rem;
+    cursor: pointer;
+}
+
+.logo {
+    width: var(--logo-width);
+}
+
+.section-text {
+    margin-top: 2rem;
+}
+
+.strong {
+    color: #05386B;
+}
+
+.p-list::before {
+    content: "•"; 
+    color: #05386B;
+    font-size: 2.5rem;
+    margin-right: 1rem;
+}
+
+footer {
+    background-color: var(--heading-color);
+    height: 40vh;
+    margin-top: 3rem;
+    overflow-y: hidden;
+}
+
+.footer-text {
+    color: var(--footer-text-color);
+}
+
+.footer-container {
+    height: 100%;
+}
+
+.footer-row {
+    height: 100%;
+}
+
+.steps-sm-img {
+    visibility: hidden;
+    display: none;
+}
+
+@media (max-width: 1199px) {
+    h1 {
+        font-size: 4rem;
+    }
+
+    p {
+        font-size: 1.4rem;
+    }
+
+    .heading-p {
+        font-size: 1.6rem;
+    }
+
+    img {
+        width: 27rem;
+    }
+
+    .img-main {
+        width: 28rem;
+    }
+
+    .footer-heading {
+        font-size: 2.5rem;
+    }
+
+    .footer-p {
+        font-size: 1.2rem;
+    }
+
+    .icons {
+        width: 3.5rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .show_menu {
+        top: 5%;
+    }
+
+    .nav_list {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 50vw;
+        height: 150vh;
+        background: #52bd82;
+        border-left: #EDF5E1 5px solid;
+        z-index: 100;
+        padding-top: 9rem !important;
+        align-items: center;
+        transform: translateX(200%);
+        transition: transform 0.3s ease-in;
+    }
+
+    .nav_list.active {
+        transform: translateX(0);
+    }
+
+    .nav_list li {
+        margin-bottom: 2rem;
+    }
+
+    .menu {
+        position: absolute;
+        z-index: 1000;
+        top: 2.5rem;
+        right: 2.5rem;
+    }
+
+    .navbar-menu {
+        text-align: center;
+        margin-top: 50rem;
+        width: 100%;
+        transition: 1s;
+    }
+    
+    .nav-toggle {
+        visibility: visible;
+        display: block;
+    }
+
+    .navbar {
+        flex-wrap: nowrap;
+    }
+
+    .heading-img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: -5rem;
+    }
+
+    .heading-text {
+        text-align: center;
+    }
+
+    p {
+        font-size: 1.3rem;
+    }
+
+    .heading-p {
+        font-size: 1.4rem;
+    }
+    
+    img {
+        width: 27rem;
+    }
+
+    .img-main {
+        width: 28rem;
+    }
+
+    .steps-img {
+        visibility: hidden;
+        display: none;
+    }
+
+    .steps-sm-img {
+        visibility: visible;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .processo {
+        margin-bottom: 3rem;
+    }
+
+    .footer-heading {
+        font-size: 2.5rem;
+    }
+
+    .footer-p {
+        font-size: 1.2rem;
+    }
+
+    .icons {
+        width: 3.5rem;
+    }
+}
+
+@media (max-width: 767px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .footer-heading {
+        font-size: 2.3rem;
+    }
+
+    .footer-p {
+        font-size: 1rem;
+    }
+
+    .icons {
+        width: 3.2rem;
+        margin-right: 2rem;
+    }
+
+    img {
+        width: 20rem;
+    }
+
+    .img-main {
+        width: 20rem;
+        margin-bottom: -200px;
+        margin-top: -100px;
+    }
+    
+    .heading-p {
+        font-size: 1rem;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .avatar {
+        width: 12rem;
+    }
+
+    .footer-heading {
+        font-size: 2rem;
+    }
+
+    .footer-p {
+        font-size: 1rem;
+    }
+
+    .icons {
+        width: 3rem;
+        margin-right: 1.2rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+}
