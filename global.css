@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 :root {
     --font-family: 'Kumbh Sans', sans-serif;
     --body-color: #52bd82;
@@ -38,14 +39,14 @@ body {
 
 ::-webkit-scrollbar {
     width: 10px;
-    background-color:rgba(44, 173, 55, 0.014);
+    background-color: rgba(44, 173, 55, 0.014);
 }
-  
+
 ::-webkit-scrollbar-thumb {
     background: #05386B;
     border-radius: 5rem;
 }
-  
+
 ::-webkit-scrollbar-thumb:hover {
     background: #EDF5E1;
 }
@@ -150,7 +151,7 @@ img {
 }
 
 .p-list::before {
-    content: "•"; 
+    content: "â€¢";
     color: #05386B;
     font-size: 2.5rem;
     margin-right: 1rem;
@@ -201,6 +202,50 @@ strong {
 }
 
 video {
+    width: 20rem;
+}
+
+input {
+    border: none;
+    border-radius: 5rem;
+    outline: none;
+    font-family: var(--font-family);
+    background: rgb(5, 56, 107, 50%);
+    line-height: 2.5rem;
+    color: #EDF5E1;
+}
+
+.label {
+    margin-bottom: -5px;
+    margin-top: 1rem;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+button {
+    border: none;
+    border-radius: 1rem;
+    padding: .5rem 1rem;
+    font-family: var(--font-family);
+    color: rgb(5, 56, 107, 50%);
+    background-color: #EDF5E1;
+    font-size: var(--p-font-size);
+}
+
+button:focus {
+    outline: none;
+}
+
+.produtos-container {
+    display: flex;
+    justify-content: center;
+}
+
+.produtos {
     width: 20rem;
 }
 
@@ -279,7 +324,7 @@ video {
         width: 100%;
         transition: 1s;
     }
-    
+
     .nav-toggle {
         visibility: visible;
         display: block;
@@ -307,7 +352,7 @@ video {
     .heading-p {
         font-size: 1.4rem;
     }
-    
+
     img {
         width: 27rem;
     }
@@ -382,7 +427,7 @@ video {
         margin-bottom: -200px;
         margin-top: -100px;
     }
-    
+
     .heading-p {
         font-size: 1rem;
     }
